@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Школьные Земли - Игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-bg">
+    <div class="screen active">
+        <div class="game-ui">
+            <div class="hero-area">
+                <img src="images/Player.png" alt="Игрок" class="hero-img" onerror="this.style.display='none'">
+                <img src="images/Sword.png" alt="Меч" id="weapon-img" class="weapon-img" onerror="this.style.display='none'">
+            </div>
+            <div class="boss-area">
+                <img src="images/Bonewall.png" alt="Босс" class="boss-img" onerror="this.style.display='none'">
+            </div>
+        </div>
+
+        <div class="quest-box">
+            <h3 id="game-stage-text">Подготовка к битве</h3>
+            <p id="student-question">Ожидание задания...</p>
+            <input type="text" id="student-answer" placeholder="Твой ответ">
+            <div id="lives-display">Попытки: ❤️❤️❤️</div>
+            <button onclick="submitAnswer()">Действовать!</button>
+            <p style="margin-top: 10px; font-size: 12px; color: #aaa;" id="progress-text"></p>
+        </div>
+
+        <div class="nav-buttons" style="position: absolute; bottom: 20px;">
+            <button class="btn-logout" onclick="logout()">Выйти</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

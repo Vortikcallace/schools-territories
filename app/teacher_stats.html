@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Статистика по сценарию</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen active">
+        <h2>Статистика по сценарию</h2>
+        <p style="margin-bottom: 10px; color: #aaa;">Учитель: <span id="stats-teacher-name"></span></p>
+        <table id="stats-table">
+            <thead>
+                <tr><th>Ученик</th><th>Статус</th><th>Ошибок</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="window.location.href='teacher.html'">Назад в кабинет</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

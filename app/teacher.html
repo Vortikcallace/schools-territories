@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Школьные Земли - Учитель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="teacher-bg">
+    <div class="screen active">
+        <h2>Конструктор заданий</h2>
+        <p style="margin-bottom: 10px; color: #aaa;">Учитель: <span id="teacher-display-name"></span></p>
+
+        <div class="form-group">
+            <label>Сценарий:</label>
+            <select id="scenario-select">
+                <option value="test">Тестовый сценарий (Уравнения)</option>
+            </select>
+        </div>
+
+        <h3>Задание 1</h3>
+        <input type="text" id="task-q1" placeholder="Уравнение (например: 2x=4)" style="margin-bottom: 5px;">
+        <input type="text" id="task-a1" placeholder="Ответ (например: 2)" style="margin-bottom: 15px;">
+
+        <h3>Задание 2</h3>
+        <input type="text" id="task-q2" placeholder="Уравнение" style="margin-bottom: 5px;">
+        <input type="text" id="task-a2" placeholder="Ответ" style="margin-bottom: 15px;">
+
+        <h3>Задание 3</h3>
+        <input type="text" id="task-q3" placeholder="Уравнение" style="margin-bottom: 5px;">
+        <input type="text" id="task-a3" placeholder="Ответ" style="margin-bottom: 15px;">
+
+        <button onclick="saveTasks()">Сохранить задания</button>
+
+        <div class="nav-buttons">
+            <button class="btn-secondary" onclick="window.location.href='teacher_stats.html'">Статистика по классу</button>
+            <button class="btn-logout" onclick="logout()">Выйти</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

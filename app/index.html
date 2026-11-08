@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Мини-апп</title>
+    <title>Школьные Земли - Вход</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <button class="play-btn" id="playButton">Играть</button>
-
-    <script src="script.js"></script>
+    <div class="screen active">
+        <h1>Школьные Земли</h1>
+        <p>Выберите роль для входа:</p>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='login_teacher.html'">Вход для учителя</button>
+            <button onclick="window.location.href='login_student.html'">Вход для ученика</button>
+        </div>
+    </div>
 </body>
 </html>
