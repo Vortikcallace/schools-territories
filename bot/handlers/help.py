@@ -3,4 +3,10 @@ from bot.instance import dp
 
 @dp.message_created(Command('help'))
 async def help_handler(event: MessageCreated):
-    await event.message.answer("это команда хелп")
+    text = (
+        "📚 **Школьные Земли** — образовательная квест-игра.\n\n"
+        "Ученики решают уравнения, чтобы зачаровать меч и победить босса.\n"
+        "Учителя могут создавать задания через конструктор.\n\n"
+        "Нажми /start, чтобы начать!"
+    )
+    await event.message.answer(text)
